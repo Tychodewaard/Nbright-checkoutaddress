@@ -1,4 +1,4 @@
-﻿@inherits NBrightBuy.render.NBrightBuyRazorTokens<NBrightRazor>
+@inherits NBrightBuy.render.NBrightBuyRazorTokens<NBrightRazor>
 @using System.Linq
 @using System.Text
 @using System.Web
@@ -55,11 +55,11 @@
     <div class="formrow">
         <div class="leftside">
             <h6>@ResourceKey("General.lblFirstName")</h6>
-            @NBrightTextBox(info, "genxml/billaddress/genxml/textbox/firstname", "required name='billfirstname' class='required')
+            @NBrightTextBox(info, "genxml/billaddress/genxml/textbox/firstname", "required name='billfirstname' class='required'")
         </div>
         <div class="rightside">
             <h6>@ResourceKey("General.lblLastName")</h6>
-            @NBrightTextBox(info, "genxml/billaddress/genxml/textbox/lastname", "required name='billlastname' class='required')
+            @NBrightTextBox(info, "genxml/billaddress/genxml/textbox/lastname", "required name='billlastname' class='required'")
         </div>
     </div>
 
@@ -86,13 +86,13 @@
 
     <div class="formrow">
         <h6>@ResourceKey("General.lblAddress2")</h6>
-        @NBrightTextBox(info, "genxml/billaddress/genxml/textbox/street", "required name='billstreet' class='required')
+        @NBrightTextBox(info, "genxml/billaddress/genxml/textbox/street", "required name='billstreet' class='required'")
     </div>
 
     <div class="formrow">
         <div class="leftside">
             <h6>@ResourceKey("General.lblCity")</h6>
-            @NBrightTextBox(info, "genxml/billaddress/genxml/textbox/city", "required name='billcity' class='required')
+            @NBrightTextBox(info, "genxml/billaddress/genxml/textbox/city", "required name='billcity' class='required'")
         </div>
         <div class="rightside">
             <h6>@ResourceKey("General.lblPostCode")</h6>
@@ -105,20 +105,20 @@
             <h6>@ResourceKey("General.lblCountry")</h6>
             @CountrySelectList(info, "genxml/billaddress/genxml/dropdownlist/country", "required name='billcountry' class='required' class='checkoutbillformcountry'")
             <!-- hidden data field required to render ajax region update -->
-            <input id="carttemplate" type="hidden" value="NBS_CheckoutRegion.cshtml">
+    <!--         <input id="carttemplate" type="hidden" value="NBS_CheckoutRegion.cshtml">
             <input id="carttheme" type="hidden" value="classicrazor">
             <input id="lang" type="hidden" value="@Utils.GetCurrentCulture()">
             <input id="region" type="hidden" value="@info.GetXmlProperty("genxml/billaddress/genxml/dropdownlist/region")">
             <input id="xpath" type="hidden" value="genxml/billaddress/genxml/dropdownlist/region">
         </div>
-  <!--      <div class="rightside checkoutbillformregiondiv">
+       <div class="rightside checkoutbillformregiondiv">
             <h6>@ResourceKey("General.lblRegion")</h6>
             @RegionSelect(info, "genxml/billaddress/genxml/dropdownlist/region", "","")
         </div>
     -->
     </div>
 
-
+</div>
 </div>
 </div>
 
@@ -153,11 +153,11 @@
     <div class="formrow">
         <div class="leftside">
             <h6>@ResourceKey("General.lblFirstName")</h6>
-            @NBrightTextBox(info, "genxml/shipaddress/genxml/textbox/firstname", "required name='shipfirstname' class='required')
+            @NBrightTextBox(info, "genxml/shipaddress/genxml/textbox/firstname", "required name='shipfirstname' class='required'")
         </div>
         <div class="rightside">
             <h6>@ResourceKey("General.lblLastName")</h6>
-            @NBrightTextBox(info, "genxml/shipaddress/genxml/textbox/lastname", "required name='shiplastname' class='required')
+            @NBrightTextBox(info, "genxml/shipaddress/genxml/textbox/lastname", "required name='shiplastname' class='required'")
         </div>
     </div>
 
@@ -184,13 +184,13 @@
 
     <div class="formrow">
         <h6>@ResourceKey("General.lblAddress2")</h6>
-        @NBrightTextBox(info, "genxml/shipaddress/genxml/textbox/street", "required name='shipstreet' class='required')
+        @NBrightTextBox(info, "genxml/shipaddress/genxml/textbox/street", "required name='shipstreet' class='required'")
     </div>
 
     <div class="formrow">
         <div class="leftside">
             <h6>@ResourceKey("General.lblCity")</h6>
-            @NBrightTextBox(info, "genxml/shipaddress/genxml/textbox/city", "required name='shipcity' class='required')
+            @NBrightTextBox(info, "genxml/shipaddress/genxml/textbox/city", "required name='shipcity' class='required'")
         </div>
         <div class="rightside">
             <h6>@ResourceKey("General.lblPostCode")</h6>
